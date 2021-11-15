@@ -1,0 +1,1 @@
+SELECT b.NAME, count(a.NAME) FROM CUSTOMER as a join Broker as b where a.BROKER_ID = b.id group by b.NAME order by count(a.NAME), b.Name;
